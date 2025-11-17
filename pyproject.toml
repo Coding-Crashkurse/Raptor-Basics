@@ -1,0 +1,26 @@
+[project]
+name = "raptor-pipeline"
+version = "0.2.0"
+description = "RAPTOR/adRAP notebook with Chroma persistence."
+requires-python = ">=3.10"
+dependencies = [
+    "langchain-openai",
+    "langchain-text-splitters",
+    "langchain-core",
+    "openai",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "pandas",
+    "numpy",
+    "python-dotenv",
+    "langchain-chroma>=0.1.2",
+    "chromadb",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+include = ["raptor_pipeline.ipynb"]
