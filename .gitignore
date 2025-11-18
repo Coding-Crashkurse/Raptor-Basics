@@ -1,2 +1,11 @@
 .venv
 .env
+artifacts/
+chroma_langchain_db/
+chroma_*/
+*.chroma
+*.chroma.db
+__pycache__/
+*.pyc
+jupyter_checkpoint*
+__pycache__
